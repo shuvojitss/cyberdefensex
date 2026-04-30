@@ -26,7 +26,7 @@ import {
 } from 'lucide-react';
 import './AIAssistant.css';
 
-const API_BASE_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:8000';
+const API_BASE_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:5000';
 
 const AIAssistant = () => {
   const [messages, setMessages] = useState([

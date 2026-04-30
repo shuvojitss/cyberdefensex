@@ -34,7 +34,7 @@ import {
 import './Overview.css';
 import useEventStream from '../hooks/useEventStream';
 
-const API_BASE_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:8000';
+const API_BASE_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:5000';
 
 const DEFAULT_OVERVIEW_DATA = {
   stats: {

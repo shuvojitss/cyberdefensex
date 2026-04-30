@@ -16,7 +16,7 @@ import {
 import './Blockchain.css';
 import useEventStream from '../hooks/useEventStream';
 
-const API_BASE_URL = process.env.REACT_APP_BLOCKCHAIN_API_URL || 'http://localhost:8000/blockchain';
+const API_BASE_URL = process.env.REACT_APP_BLOCKCHAIN_API_URL || 'http://localhost:5000/blockchain';
 
 const initialCounts = {
   all: 0,

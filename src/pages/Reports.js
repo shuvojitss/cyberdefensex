@@ -18,7 +18,7 @@ import {
 import './Reports.css';
 
 const Reports = () => {
-  const API_BASE_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:8000';
+  const API_BASE_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:5000';
   const [selectedType, setSelectedType] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);

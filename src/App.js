@@ -88,7 +88,7 @@ function App() {
   }, [theme]);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         {/* Public routes - no sidebar */}
         <Route path="/" element={<Landing />} />
