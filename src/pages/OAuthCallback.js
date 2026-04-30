@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
+const API_BASE_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:5000';
+
 const OAuthCallback = ({ provider, setUserProfile }) => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
@@ -11,7 +13,7 @@ const OAuthCallback = ({ provider, setUserProfile }) => {
     
     if (code) {
       // Send code to Flask backend to exchange for tokens
-      fetch(`http://localhost:8000/api/auth/${provider}/callback?code=${code}`, {
+      fetch(`${API_BASE_URL}/api/auth/${provider}/callback?code=${code}`, {
         method: 'GET',
         credentials: 'include',
       })

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useCallback } from 'react';
 
-const API_BASE_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:8000';
+const API_BASE_URL = process.env.REACT_APP_BACKEND_API_URL || 'http://localhost:5000';
 
 /**
  * useEventStream — connects to the SSE endpoint and calls the provided
